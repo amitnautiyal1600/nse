@@ -30,6 +30,7 @@ Route::get('/get-bank-nifty-nse-data', [BankNiftyController::class, 'getBankNift
 Route::get('/save-bank-nifty-nse-data', [BankNiftyController::class, 'saveBankNiftyNseData'])->name('saveBankNiftyNseData'); //ajax
 
 
+Route::get('/iv-charts', [ChartController::class, 'chartIV'])->name('chartIV');
 Route::get('/charts', [ChartController::class, 'chartHome'])->name('chartHome');
 Route::get('/chart-data', [ChartController::class, 'getChartData'])->name('getChartData');
 

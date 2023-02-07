@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Models\BankNiftyNseData;
 use App\Models\NiftyNseData;
+use App\Charts\IVChart;  
+use App\Charts\IVHeatChart;  
 use Response; 
 use DateTime;  
 use DB;  
@@ -14,6 +16,11 @@ class ChartController extends Controller
 { 
     public function chartHome() { 
         return view('chart');
+    }
+
+    public function chartIV(IVHeatChart $chart) { 
+            return view('ivchart', ['chart' => $chart->build()]);
+
     }
 
     public function getChartData(Request $request) { 
