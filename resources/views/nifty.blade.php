@@ -343,13 +343,13 @@
                         datasets: [{
                           data: response.chartdata.ceoi,
                           label: "Call Open Interest",
-                          borderColor: "#0cb20c",
+                          borderColor: "#f95252",
                           fill: true,
                           backgroundColor: '#faf3cd73',
                         },{
                           data: response.chartdata.peoi,
                           label: "Put Open Interest",
-                          borderColor: "#f95252",
+                          borderColor: "#0cb20c",
                           fill: true,
                           backgroundColor: '#faf3cd73',
                         }]
@@ -377,14 +377,14 @@
                       data: {
                         labels: response.chartdata.strike,
                         datasets: [{
-                          borderColor: '#0cb20c',
+                          borderColor: '#f95252',
                           label: "Call Change In Open Interest",
                           data: response.chartdata.cechangeoi,
                           fill: true,
                           backgroundColor: '#faf3cd73',
                         },
                         {
-                          borderColor: '#f95252',
+                          borderColor: '#0cb20c',
                           label: "Put Change In Open Interest",
                           data: response.chartdata.pechangeoi,
                           fill: true,
@@ -416,15 +416,15 @@
                         datasets: [{
                           data: response.chartdata.ceoi,
                           label: "Call Open Interest",
-                          borderColor: "#0cb20c",
-                          fill: true,
-                          backgroundColor: '#0cb20c',
-                        },{
-                          data: response.chartdata.peoi,
-                          label: "Put Open Interest",
                           borderColor: "#f95252",
                           fill: true,
                           backgroundColor: '#f95252',
+                        },{
+                          data: response.chartdata.peoi,
+                          label: "Put Open Interest",
+                          borderColor: "#0cb20c",
+                          fill: true,
+                          backgroundColor: '#0cb20c',
                         }]
                       },
                       options: {
@@ -452,16 +452,16 @@
                         datasets: [{
                           borderColor: '#0cb20c',
                           label: "Call Change In Open Interest",
-                          data: response.chartdata.cechangeoi,
+                          data: response.chartdata.pechangeoi,
                           fill: true,
-                          backgroundColor: '#0cb20c',
+                          backgroundColor: '#f95252',
                         },
                         {
                           borderColor: '#f95252',
                           label: "Put Change In Open Interest",
-                          data: response.chartdata.pechangeoi,
+                          data: response.chartdata.cechangeoi,
                           fill: true,
-                          backgroundColor: '#f95252',
+                          backgroundColor: '#0cb20c',
                         }]
                       },
                       options: {
