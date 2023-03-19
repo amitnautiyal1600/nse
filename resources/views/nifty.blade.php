@@ -7,10 +7,10 @@
 
         <div class="row p-2" style="background:#faf3cd">
             <div class="col-md-4"> 
-                <span> Nifty Index <span class="dynamic_data_red nifty_index_value">0</span></span>
+                <span> Nifty Index : <span class="dynamic_data_red nifty_index_value">0</span></span>
             </div>
             <div class="col-md-4"> 
-                <span> Expriy Date <span class="dynamic_data_red nifty_expiry_date">0</span></span>
+                <span> Expriy Date : <span class="dynamic_data_red nifty_expiry_date">0</span></span>
             </div>  
             <div class="col-md-4"> 
                 <span>Last Updated : <span class="dynamic_data_red" id="datetime"></span></span>
